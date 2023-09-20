@@ -36,4 +36,13 @@ function Footer() {
         </footer>
     )
 }
+function Page() {
+    return (
+        <div>
+            <Header />
+            <MainContent />
+            <Footer />
+        </div>
+    )
+}
 
