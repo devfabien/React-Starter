@@ -14,6 +14,7 @@ function Header() {
 }
 
 
+
 function MainContent() {
     return (
         <div>
@@ -28,4 +29,11 @@ function MainContent() {
     )
 }
 
+function Footer() {
+    return (
+        <footer>
+            <small>© 2021 Ziroll development. All rights reserved.</small>
+        </footer>
+    )
+}
 
