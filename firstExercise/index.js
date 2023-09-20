@@ -28,7 +28,6 @@ function MainContent() {
         </div>
     )
 }
-
 function Footer() {
     return (
         <footer>
@@ -36,6 +35,7 @@ function Footer() {
         </footer>
     )
 }
+
 function Page() {
     return (
         <div>
@@ -46,3 +46,4 @@ function Page() {
     )
 }
 
+ReactDOM.render(<Page />, document.getElementById("root"))
