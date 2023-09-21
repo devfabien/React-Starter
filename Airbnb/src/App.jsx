@@ -7,7 +7,7 @@ import CardData from './components/CardData'
 
 function App() {
  
-const CardElement=CardData.map((card,id)=><Card key={id} image={card.image} ratio={card.ratio} num={card.num} info={card.info} money={card.money} openSpot={card.openSpot}/>)
+const CardElement=CardData.map((item,id)=><Card key={id} item={item}/>)
   return (
     <>
      <Navbar/>

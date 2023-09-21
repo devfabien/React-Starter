@@ -1,18 +1,18 @@
 import React from "react";
-import image1 from '../assets/image1.png';
 import star from '../assets/Star.png';
-export default function Card({image,ratio,num,info,money}) {
+export default function Card(props) {
     return (
         <div className="card">
-            <img src={image} className="card--image" />
+            {!props.item.openSpot&&<div className="card--sold">Sold OUT</div>}
+            <img src={`../images/${props.item.image}`} className="card--image" />
             <div className="card--stats">
                 <img src={star} className="card--star" />
-                <span>{ratio}</span>
-                <span className="gray">({num}) • </span>
+                <span>{props.item.ratio}</span>
+                <span className="gray">({props.item.num}) • </span>
                 <span className="gray">USA</span>
             </div>
-            <p>{info}</p>
-            <p><span className="bold">From ${money}</span> / person</p>
+            <p>{props.item.info}</p>
+            <p><span className="bold">From ${props.item.money}</span> / person</p>
         </div>
     )
 }
